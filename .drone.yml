@@ -1,0 +1,19 @@
+build:
+  image: node:5
+  commands:
+    - npm install
+    - npm test
+
+#compose:
+#  database:
+#    image: postgres
+#    environment:
+#      - POSTGRES_USER=postgres
+#      - POSTGRES_PASSWORD=mysecretpassword
+
+#publish:
+#  docker:
+#    username: octocat
+#    password: password
+#    email: octocat@github.com
+#    repo: octocat/hello-world

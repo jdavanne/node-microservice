@@ -1,0 +1,33 @@
+{
+  "name": "node-microservice",
+  "version": "0.0.1",
+  "description": "Sample for node microservice",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "start": "node app/index.js",
+    "build": "docker build -t node-microservice ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdavanne/node-microservice.git"
+  },
+  "keywords": [
+    "node",
+    "microservice"
+  ],
+  "author": "jdavanne@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdavanne/node-microservice/issues"
+  },
+  "homepage": "https://github.com/jdavanne/node-microservice#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "expect": "^1.15.2",
+    "mocha": "^2.4.5",
+    "superagent": "^1.8.2"
+  }
+}

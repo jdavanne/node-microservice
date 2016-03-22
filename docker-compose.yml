@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  node-microservice:
+    image: node-microservice
+    environment:
+      SERVER_PORT: 3000
+    restart: always
+    ports:
+      - 3000:3000
