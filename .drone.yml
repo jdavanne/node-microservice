@@ -1,9 +1,13 @@
 build:
-  image: node:5
+  image: node:$$version
   commands:
     - npm install
     - npm test
 
+matrix:
+  version:
+    - 5
+    - 4
 #compose:
 #  database:
 #    image: postgres
